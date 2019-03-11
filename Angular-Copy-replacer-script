@@ -1,0 +1,11 @@
+-------STANDARD JS FOR CHANGING TEXT ELEMENTS ON PAGE---
+function replacer(elementId, oldText, newText) {
+    setTimeout(function () {
+        var cmb = document.getElementById(elementId);
+        if (!cmb) { return replacer(elementId, oldText, newText); }
+        if (cmb.textContent.toLowerCase() === oldText.toLowerCase()) {
+            cmb.textContent = newText;
+        }
+    }, 50);
+}
+replacer('coverage-selection-container.call-me-back', " ontvang een offerte ", " Ontdek je offerte ");
