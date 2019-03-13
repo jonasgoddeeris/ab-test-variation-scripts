@@ -1,0 +1,6 @@
+<button onclick="backToTop()" id="backtotopbutton" title="Go to top" style="display: block;">
+    <svg version="1.1" viewBox="0 0 14 14" class="svg-inline--bi bi-chevron-top bi-2x" aria-hidden="true">
+        <path fill-rule="evenodd" d="M3.646 10.306a.508.508 0 0 1-.71 0 .497.497 0 0 1-.007-.7l4.085-4.06 4.054 4.055a.505.505 0 0 1 0 .707.501.501 0 0 1-.71-.002L7.008 6.954l-3.361 3.352zM2 3h10v1H2V3z"></path>
+    </svg>
+    <span class="srt">terug naar boven</span>
+</button>
