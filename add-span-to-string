@@ -1,0 +1,10 @@
+var offers = document.querySelectorAll('[itemprop="offers"]');
+for (var i = 0; i < offers.length; i++) {
+	var price = offers[i].querySelector('div:nth-child(5) > span');
+	var priceText = price.innerHTML;
+	var decimals = priceText.split(',')[1];
+	var repl = '<span id="abTest3-' +i +'">' + decimals + '</span>';
+	price.innerHTML = priceText.replace(decimals, repl);
+	document.getElementById('abTest3-'+i).setAttribute('style', 'color: red; vertical-align: text-top; font-size:70%;');
+}
+//another creation by Lorin Renodeyn
