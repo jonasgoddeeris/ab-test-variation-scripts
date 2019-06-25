@@ -7,4 +7,16 @@ for (var i = 0; i < offers.length; i++) {
 	price.innerHTML = priceText.replace(decimals, repl);
 	document.getElementById('abTest3-'+i).setAttribute('style', 'color: red; vertical-align: text-top; font-size:70%;');
 }
+
 //another creation by Lorin Renodeyn
+/*
+Run-down:
+1. zoek al die offer blokjes
+2. voor ieder offer block
+	- pak de span tag
+	- pak die zen inner html (en ga der maar vanuit dat dat gewoon een string is)
+	- pak et decimaal deel van die string
+	- draai dat decimaal stuk in een span met een unieke id
+	- vervang dan het decimaal stuk in de orignele innerhtml door het nieuwe gewrapte stuk
+	- plak der ne stijl aan
+/*
