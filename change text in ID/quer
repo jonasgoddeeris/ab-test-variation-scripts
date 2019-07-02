@@ -1,4 +1,0 @@
-setInterval(function () {
-	document.querySelector("#tab-description > b").innerHTML = "";
-	document.getElementById("tab-description").innerHTML = document.getElementById("tab-description").innerHTML.replace(/\d+\.?\d+,?\d+ €/, "");
-}, 50);
