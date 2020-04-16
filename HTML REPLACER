@@ -1,0 +1,11 @@
+function replacer(elementId, oldHTML, newHTML) {
+    setTimeout(function () {
+        console.log(+1);
+        var B = document.querySelector(elementId);
+        if (!B) { return replacer(elementId, oldHTML, newHTML); }
+        if (B.outerHTML === oldHTML) {
+            B.outerHTML = newHTML;
+        }
+    }, 50);
+}
+replacer('#esales-react-root > div',"<span>Vul per abonnement het rijksregisternummer in van de abonnee. Zo kunnen we nagaan of de abonnee korting krijgt via zijn gemeente.</span>", "<span>Vul per abonnement het rijksregisternummer in van de abonnee.</span><p>Waarom je rijksregisternummer?</p><ul><li>Eventuele gemeentekorting  automatisch toegepast</li><li>Koppeling met je bestaande MOBIB-kaart(verlenging)</li><li>Persoonlijke gegevens automatisch opgehaald</li></ul>");
